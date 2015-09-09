@@ -1,4 +1,9 @@
-
+/**
+  Zoilo Mercedes
+  Daily Programming challenge, 9-7-2015
+  Cellular Automata, Rule 90
+  Computes rule 90 for a given binary string, 25 levels (Sierpinsky Triangle)
+ */
 #include <iostream>
 #include <string>
 
@@ -22,7 +27,7 @@ int main(){
 
   cout << nextRow << endl;
 
-  while(count < 500){
+  while(count < 25){
     nextRow = "";
     for(i=0;i<row.length();i++){
       if(i==0)
