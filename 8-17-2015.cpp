@@ -11,7 +11,7 @@ using namespace std;
 
 bool ordered(string word){
 	for(int i = 0; i < word.length() - 1;i++){
-		if(word[i] >= word[i++])
+		if(word[i] >= word[i+1])
 			return false;
 	}
 	return true;
@@ -26,7 +26,7 @@ int main(){
 		else
 			cout<< word << " NOT IN ORDER\n";
 	}
-	return 0
+	return 0;
 }
 /**
  Note: <algorithm> has methods for checking if things are in alph order. (is_sorted())
